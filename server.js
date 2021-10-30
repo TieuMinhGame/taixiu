@@ -28,15 +28,9 @@ let mongoose = require('mongoose');
 
 require('mongoose-long')(mongoose); // INT 64bit
 
-mongoose.set('useFindAndModify', false);
+
 mongoose.set('useCreateIndex', true);
-mongoose.connect(configDB.url, configDB.options)
-    .catch(function(error) {
-        if (error)
-            console.log('Connect to MongoDB failed', error);
-        else
-            console.log('Connect to MongoDB success');
-    });
+mongoose.connect(configDB.url, configDB.options).then(()=>{console.log('...')})
 
 // kết nối tới database
 
