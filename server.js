@@ -28,8 +28,6 @@ let mongoose = require('mongoose');
 
 require('mongoose-long')(mongoose); // INT 64bit
 
-
-mongoose.set('useCreateIndex', true);
 mongoose.connect(configDB.url, configDB.options).then(()=>{console.log('...')})
 
 // kết nối tới database
