@@ -1,6 +1,6 @@
 
 module.exports = {
-	'url': 'mongodb+srv://admin:@123456@cluster0.9h5fe.mongodb.net/server?retryWrites=true&w=majority',
+	'url': 'mongodb://localhost:27017',
 	'options': {
 		//'user':   'root',
 		//'pass':   '',
